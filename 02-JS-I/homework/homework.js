@@ -166,9 +166,8 @@ function esPositivo(numero) {
   //Si el número es 0, devuelve false
   if (Math.sign(numero) == 1) {
     return "Es positivo";
-  } else {  if (Math.sign(numero) == -1) {
+  } else if (Math.sign(numero) == -1) {
               return "Es negativo";
-            }
           }
   return false;
 }
@@ -230,19 +229,19 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   if (letra.length < 2) {
-    if (letra == "a") {
+    if (letra === "a") {
       return "Es vocal";
     }
-    if (letra == "e") {
+    if (letra === "e") {
       return "Es vocal";
     }
-    if (letra == "i") {
+    if (letra === "i") {
       return "Es vocal";
     }
-    if (letra == "o") {
+    if (letra === "o") {
       return "Es vocal";
     }
-    if (letra == "u") {
+    if (letra === "u") {
       return "Es vocal";
     }
   } else {
